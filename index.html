@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pesquisa de Mercado</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+<h1>Pesquisa de Mercado - Arquivo base de exemplo para validação</h1>
+</header>
+<main>
+    <h2>Sua opinião faz florescer novas ideias</h2>
+    <p>Estamos realizando uma pesquisa para entender melhor os hábitos e preferências de consumidores em relação à compra de flores e plantas. Sua participação leva apenas alguns minutos e ajudará no desenvolvimento de um novo serviço de assinatura de flores</p>
+    <form id="pesquisa-form">
+
+        <fieldset id="grupo-perfil">
+            <legend>Perfil</legend>
+            <label>Nome <input type="text" id="nome" name="nome"></label>
+            <label>E-mail <input type="email" id="email" name="email" required></label>
+
+            <br>
+            <label>Faixa etária</label>
+            <br>
+            <label><input type="radio" id="faixa-menor18" name="faixa" value="Menos de 18"> Menos de 18</label>
+            <br>
+            <label><input type="radio" id="faixa-18-24" name="faixa" value="18-24">18 a 24</label>
+            <br>
+            <label><input type="radio" id="faixa-25-34" name="faixa" value="25-34">25 a 34</label>
+            <br>
+            <label><input type="radio" id="faixa-35-44" name="faixa" value="35-44">35 a 44</label>
+            <br>
+            <label><input type="radio" id="faixa-45-54" name="faixa" value="45-54">45 a 54</label>
+            <br>
+            <label><input type="radio" id="faixa-55mais" name="faixa" value="55+">55 ou mais</label>
+
+            <br>
+            <label>Cidade <input type="text" id="cidade" name="cidade"></label>
+
+            <br>
+            <label>Estado
+            <select id="estado" name="estado">
+                <option></option>
+                <option value="ac">AC</option>
+                <option value="al">AL</option>
+                <option value="ap">AP</option>
+                <option value="am">AM</option>
+                <option value="ba">BA</option>
+                <option value="ce">CE</option>
+                <option value="df">DF</option>
+                <option value="es">ES</option>
+                <option value="go">GO</option>
+                <option value="ma">MA</option>
+                <option value="mt">MT</option>
+                <option value="ms">MS</option>
+                <option value="mg">MG</option>
+                <option value="pa">PA</option>
+                <option value="pb">PB</option>
+                <option value="pr">PR</option>
+                <option value="pe">PE</option>
+                <option value="pi">PI</option>
+                <option value="rj">RJ</option>
+                <option value="rn">RN</option>
+                <option value="rs">RS</option>
+                <option value="ro">RO</option>
+                <option value="rr">RR</option>
+                <option value="sc">SC</option>
+                <option value="sp">SP</option>
+                <option value="se">SE</option>
+                <option value="to">TO</option>
+            </select>
+            </label>
+            <br><br>
+
+            <label>Tipo de moradia</label><br>
+            <label><input type="radio" id="moradia-casa" name="moradia" value="Casa">Casa</label>
+            <label><input type="radio" id="moradia-apartamento" name="moradia" value="Apartamento">Apartamento</label>
+            <label><input type="radio" id="moradia-condominio" name="moradia" value="Condomínio">Condomínio</label>
+            <label><input type="radio" id="moradia-outro" name="moradia" value="Outro">Outro</label>
+        </fieldset>
+
+        <fieldset id="grupo-relacao">
+            <legend>Relação com Flores e Plantas</legend>
+            <label>Frequência de compra</label>
+            <br>
+            <label><input type="radio" id="freq-nunca" name="freq" value="Nunca">Nunca</label>
+            <label><input type="radio" id="freq-raramente" name="freq" value="Raramente">Raramente</label>
+            <label><input type="radio" id="freq-algumas-vezes-ano" name="freq" value="Algumas vezes por ano">Algumas vezes por ano</label>
+            <label><input type="radio" id="freq-mensalmente" name="freq" value="Mensalmente">Mensalmente</label>
+            <label><input type="radio" id="freq-quinzenalmente" name="freq" value="Quinzenalmente">Quinzenalmente</label>
+            <label><input type="radio" id="freq-semanalmente" name="freq" value="Semanalmente">Semanalmente</label>
+            <br>
+
+            <label>Onde costuma comprar?</label>
+            <br>
+            <label><input type="checkbox" id="local-floriculturas" name="local_compra" value="Floriculturas">Floriculturas</label>
+            <label><input type="checkbox" id="local-supermercados" name="local_compra" value="Supermercados">Supermercados</label>
+            <label><input type="checkbox" id="local-feiras" name="local_compra" value="Feiras">Feiras</label>
+            <label><input type="checkbox" id="local-garden-centers" name="local_compra" value="Garden Centers">Garden Centers</label>
+            <label><input type="checkbox" id="local-internet" name="local_compra" value="Internet">Internet</label>
+            <label><input type="checkbox" id="local-redes-sociais" name="local_compra" value="Redes sociais">Redes sociais</label>
+            <label><input type="checkbox" id="local-outro" name="local_compra" value="Outro">Outro</label>
+        </fieldset>
+
+        <fieldset id="grupo-preferencias">
+            <legend>Preferências</legend>
+            <label><input type="radio" id="pref-flores-naturais" name="pref" value="Flores naturais">Flores naturais</label>
+            <label><input type="radio" id="pref-plantas" name="pref" value="Plantas">Plantas</label>
+            <label><input type="radio" id="pref-ambos" name="pref" value="Ambos">Ambos</label>
+            <label>Flores favoritas <input type="text" id="flores-favoritas" name="flores_favoritas"></label>
+        </fieldset>
+
+        <fieldset id="grupo-assinatura">
+            <legend>Interesse na Assinatura</legend>
+            <label>Você estaria interessado em uma assinatura de um clube de flores?</label>
+            <label><input type="radio" id="interesse-sim" name="interesse" value="Sim">Sim</label>
+            <label><input type="radio" id="interesse-talvez" name="interesse" value="Talvez">Talvez</label>
+            <label><input type="radio" id="interesse-nao" name="interesse" value="Não">Não</label>
+        </fieldset>
+
+        <fieldset id="grupo-preco">
+            <legend>💰 Disposição a Pagar</legend>
+            <label> Qual o preço que estaria disposto a pagar por uma assinatura?</label>
+            <label><input type="radio" id="preco-ate-50" name="preco" value="Até R$50">Até R$50</label>
+            <label><input type="radio" id="preco-51-80" name="preco" value="R$51-80">R$51-80</label>
+            <label><input type="radio" id="preco-81-120" name="preco" value="R$81-120">R$81-120</label>
+            <label><input type="radio" id="preco-121-180" name="preco" value="R$121-180">R$121-180</label>
+            <label><input type="radio" id="preco-acima-180" name="preco" value="Acima de R$180">Acima de R$180</label>
+        </fieldset>
+
+        <fieldset id="grupo-canais">
+            <legend> Comunicação e Entrega</legend>
+            <label>Qual o melhor canal de comunicação?</label><br>
+            <label><input type="radio" id="canal-site" name="canal" value="Site">Site</label>
+            <label><input type="radio" id="canal-whatsapp" name="canal" value="WhatsApp">WhatsApp</label>
+            <label><input type="radio" id="canal-aplicativo" name="canal" value="Aplicativo">Aplicativo</label>
+            <label><input type="radio" id="canal-loja-fisica" name="canal" value="Loja física">Loja física</label>
+            <label><input type="radio" id="canal-instagram" name="canal" value="Instagram">Instagram</label>
+        </fieldset>
+
+        <fieldset id="grupo-avaliacao">
+            <legend>⭐ Avaliação Final</legend>
+            <div class="form-group">
+            <label> De 0 a 10, qual a chance de você assinar esse serviço se ele existisse hoje?</label>
+            <div>
+                <label><input type="radio" id="nota-interesse-0" name="nota_interesse" value="0">0</label>
+                <label><input type="radio" id="nota-interesse-1" name="nota_interesse" value="1">1</label>
+                <label><input type="radio" id="nota-interesse-2" name="nota_interesse" value="2">2</label>
+                <label><input type="radio" id="nota-interesse-3" name="nota_interesse" value="3">3</label>
+                <label><input type="radio" id="nota-interesse-4" name="nota_interesse" value="4">4</label>
+                <label><input type="radio" id="nota-interesse-5" name="nota_interesse" value="5">5</label>
+                <label><input type="radio" id="nota-interesse-6" name="nota_interesse" value="6">6</label>
+                <label><input type="radio" id="nota-interesse-7" name="nota_interesse" value="7">7</label>
+                <label><input type="radio" id="nota-interesse-8" name="nota_interesse" value="8">8</label>
+                <label><input type="radio" id="nota-interesse-9" name="nota_interesse" value="9">9</label>
+                <label><input type="radio" id="nota-interesse-10" name="nota_interesse" value="10">10</label>
+            </div>
+
+
+            <label>O que impediria de contratar esse serviço?<br><textarea id="impeditivo" name="impeditivo" rows="4"></textarea></label>
+
+            <label >Deseja receber novidades?</label>
+            <label><input type="radio" id="news-sim" name="news" value="Sim">Sim</label><label><input type="radio" id="news-nao" name="news" value="Não">Não</label>
+        </fieldset>
+
+        <button type="submit" id="btn-enviar">Enviar</button>
+    </form>
+</main>
+</body></html>
