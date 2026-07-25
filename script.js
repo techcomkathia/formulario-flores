@@ -124,7 +124,7 @@ async function salvarPesquisa(dados) {
         return;
     }
 
-    console.log(data);
+    console.log(dados);
     alert('Pesquisa enviada com sucesso!');
 }
 
