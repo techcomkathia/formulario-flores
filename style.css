@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;600&display=swap');
+
+:root{
+    /* aplicar as variaveis para toda a aplicação / todos os elementos */
+    --nome-variavel: rgb(30, 0, 255);
+    --cor-fundo : #d9f0df;
+    --cor-superficie : #ffffff;
+    --cor-titulo : #1f4d2e;
+    --cor-texto : #555555;
+    --cor-borda : #d9f0df;
+    --cor-destaque : #f4c430;
+    --cor-interacao : #f2994a;
+    --cor-texto-claro : #ffffff;
+    --cor-texto-botao : #1f4d2e;
+    --fonte: 'Poppins', sans-serif;
+}
+
+header{
+    background-color: var(--nome-variavel);
+}
