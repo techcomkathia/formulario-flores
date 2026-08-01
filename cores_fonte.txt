@@ -1,3 +1,6 @@
+    
+    -Atividade1: defina as variáveis de css com os nomes e valores abaixo
+    
     cor fundo -> #d9f0df;
     cor superficie -> #ffffff;
     cor titulo -> #1f4d2e;
